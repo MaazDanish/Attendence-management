@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendence Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/Frontend/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 mt-5">
+        <div class="input-group mb-3">
+          <input type="date" class="form-control" id="dateInput" name="dateInput">
+          <div class="input-group-append">
+            <button class="btn btn-primary" id="getDetailsButton">Get Details</button>
+            <button class="btn btn-success" id="fetchReportsButton">Fetch Reports</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="attendanceForm" style="display: none;" class="text-center mt-5">
+    <div>
+      <input type="text" id="student1" name="student1" value="John Doe">
+      <input type="radio" id="present1" name="attendance1" value="present">
+      <label for="present1">Present</label>
+      <input type="radio" id="absent1" name="attendance1" value="absent">
+      <label for="absent1">Absent</label>
+    </div>
+    <div>
+      <input type="text" id="student2" name="student2" value="Jane Smith">
+      <input type="radio" id="present2" name="attendance2" value="present">
+      <label for="present2">Present</label>
+      <input type="radio" id="absent2" name="attendance2" value="absent">
+      <label for="absent2">Absent</label>
+    </div>
+    <div>
+      <input type="text" id="student3" name="student3" value="Alice Johnson">
+      <input type="radio" id="present3" name="attendance3" value="present">
+      <label for="present3">Present</label>
+      <input type="radio" id="absent3" name="attendance3" value="absent">
+      <label for="absent3">Absent</label>
+    </div>
+    <div>
+      <input type="text" id="student4" name="student4" value="Bob Williams">
+      <input type="radio" id="present4" name="attendance4" value="present">
+      <label for="present4">Present</label>
+      <input type="radio" id="absent4" name="attendance4" value="absent">
+      <label for="absent4">Absent</label>
+    </div>
+    <div>
+      <input type="text" id="student5" name="student5" value="Eva Martinez">
+      <input type="radio" id="present5" name="attendance5" value="present">
+      <label for="present5">Present</label>
+      <input type="radio" id="absent5" name="attendance5" value="absent">
+      <label for="absent5">Absent</label>
+    </div>
+    <button id="markAttendanceButton" class="btn btn-primary mt-3">Mark Attendance</button>
+  </div>
+  <div class="conatiner text-center mt-5" style="display: none;" id="Details">
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  <script src="/Frontend/index.js"></script>
+</body>
+
+</html>
